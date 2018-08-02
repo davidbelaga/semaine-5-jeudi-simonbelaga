@@ -1,0 +1,8 @@
+<h1>Bienvenue sur la home-page de ce secret website</h1>
+
+<% if !logged_in? %>
+<%= link_to "Sign up", new_user_path, class: "btn btn-primary" %>
+<%= link_to "Log in", login_path, class: "btn btn-success" %>
+<% end %>
+
+<%= link_to "La réponse à la question de l'univers", static_pages_secret_path, class: "btn btn-default" %>

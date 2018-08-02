@@ -8,8 +8,10 @@ class UsersController < ApplicationController
   end
 
   def create
-    User.create(user_params)
-    redirect_to users_path
+    user = User.create(user_params)
+    log_in(user)
+    flash[:success] = "Vous êtes bien inscrit"
+    redirect_to '/'
   end
 
   def edit
