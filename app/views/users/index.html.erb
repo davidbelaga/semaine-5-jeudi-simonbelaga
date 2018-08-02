@@ -1,0 +1,9 @@
+<h1>Bienvenue sur le secrect website </h1>
+<p>Voici la liste des utilisateurs inscrits :</p>
+
+<% @users.each do |user| %>
+<p><%= user.email %> <a href="<%= edit_user_path(user.id) %>" class="btn btn-primary"/>Modifier </a> <%= link_to 'Supprimer', user, method: :delete, class: "btn btn-danger" %></p>
+<% end %>
+
+
+<%= link_to "Nouveau user", new_user_path, class: "btn btn-success" %>

@@ -1,0 +1,19 @@
+<h2>Modifier le user</h2>
+
+<%= form_for @user do |f| %>
+  <div class="form-group">
+    <label>Email de l'utilisateur</label>
+    <%= f.text_field :email, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <label>Mot de passe de l'utilisateur</label>
+    <%= f.text_field :password, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <label>Confirmation du mat de passe</label>
+    <%= f.text_field :password_confirmation, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-default">Modifier</button>
+  </div>
+<% end %>
