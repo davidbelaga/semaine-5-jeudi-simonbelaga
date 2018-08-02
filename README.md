@@ -5,20 +5,6 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+Voici le lien heroku : 
+https://secret-sands-90610.herokuapp.com/users/new
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
